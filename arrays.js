@@ -3,7 +3,9 @@
 
 // 1. printIndices
 function printIndices(items) {
-  // Replace this with your code
+  for (const index in items) {
+    console.log(items[index], index)
+  }
 }
 
 
