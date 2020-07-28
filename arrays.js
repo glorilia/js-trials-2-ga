@@ -23,5 +23,8 @@ function everyOtherItem(items) {
 
 // 3. smallestNItems
 function smallestNItems(items, n) {
-  // Replace this with your code
+  const sortedItems = items.sort((a,b) => a - b);
+  const sortedNItems = sortedItems.slice(0, n);
+  sortedNItems.reverse();
+  console.log(sortedNItems);
 }
